@@ -50,6 +50,15 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
