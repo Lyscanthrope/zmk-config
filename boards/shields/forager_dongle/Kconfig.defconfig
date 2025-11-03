@@ -22,7 +22,7 @@ if SHIELD_FORAGER_CENTRAL
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Forager_with_dongle"
+    default "Forager_w_dngl"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
