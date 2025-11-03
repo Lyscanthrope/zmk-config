@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+
+
+config SHIELD_FORAGER_CENTRAL
+    def_bool $(shields_list_contains,forager_central)
+
+config SHIELD_FORAGER_LEFT
+    def_bool $(shields_list_contains,forager_left)
+
+config SHIELD_FORAGER_RIGHT
+    def_bool $(shields_list_contains,forager_right)
