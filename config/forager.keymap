@@ -112,10 +112,10 @@
 
         base {
             bindings = <
-  &kp A  &kp Z  &kp E  &kp R       &kp T          &kp Y        &kp U          &kp I  &kp O          &kp P
-  &kp Q  &kp S  &kp D  &kp F       &kp G          &kp H        &kp J          &kp K  &kp L          &sl 6
-  &kp Z  &kp X  &kp C  &kp V       &kp B          &kp N        &kp SEMICOLON  &kp M  &kp LS(COMMA)  &kp KP_DIVIDE
-                       &kp LSHIFT  &lt 3 ENTER    &lt 2 SPACE  &mo 4
+  &kp A    &kp Z  &kp E  &kp R       &kp T          &kp Y        &kp U          &kp I  &kp O          &kp P
+  &kp Q    &kp S  &kp D  &kp F       &kp G          &kp H        &kp J          &kp K  &kp L          &sl 6
+  &lt 7 W  &kp X  &kp C  &kp V       &kp B          &kp N        &kp SEMICOLON  &kp M  &kp LS(COMMA)  &kp KP_DIVIDE
+                         &kp LSHIFT  &lt 3 ENTER    &lt 2 SPACE  &mo 4
             >;
         };
 
@@ -139,9 +139,9 @@
 
         num {
             bindings = <
-  &trans     &kp LG(TAB)  &kp LS(LC(TAB))  &kp LC(TAB)  &trans    &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &trans
-  &sk LGUI   &sk LALT     &sk LSHFT        &sk LCTRL    &trans    &kp KP_SUBTRACT  &kp N4  &kp N5  &kp N6  &kp N0
-  &kp LC(W)  &kp LC(X)    &kp LC(C)        &kp LC(V)    &trans    &kp KP_COMMA     &kp N1  &kp N2  &kp N3  &kp KP_DOT
+  &trans     &kp LG(TAB)  &kp LS(LC(TAB))  &kp LC(TAB)  &trans    &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+  &sk LGUI   &sk LALT     &sk LSHFT        &sk LCTRL    &trans    &kp KP_SUBTRACT  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0
+  &kp LC(W)  &kp LC(X)    &kp LC(C)        &kp LC(V)    &trans    &kp KP_COMMA     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
                                            &trans       &trans    &trans           &trans
             >;
         };
@@ -157,10 +157,10 @@
 
         layer_5 {
             bindings = <
-  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9   &kp N0
-  &kp F11  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F12  &trans
-                           &trans  &trans    &trans  &trans
+  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &kp F6           &kp F7           &kp F8           &kp F9           &kp F10
+  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+  &kp F11          &trans           &trans           &trans           &trans             &trans           &trans           &trans           &kp F12          &trans
+                                                     &trans           &trans             &trans           &trans
             >;
         };
 
