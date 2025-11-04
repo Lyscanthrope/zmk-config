@@ -73,8 +73,37 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <5>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <17 18>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <12 13>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <16 17>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -101,37 +130,37 @@
 
         nav {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &caps_word  &kp HOME  &kp UP_ARROW    &kp END    &kp PAGE_UP      &trans  &trans     &trans     &trans    &trans
+  &kp TAB     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp PAGE_DOWN    &trans  &sk LCTRL  &sk LSHFT  &sk LALT  &sk LGUI
+  &trans      &trans    &trans          &trans     &trans           &trans  &trans     &trans     &trans    &trans
+                                        &trans     &trans           &trans  &trans
             >;
         };
 
         num {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &trans     &kp LG(TAB)  &kp LS(LC(TAB))  &kp LC(TAB)  &trans    &kp KP_DIVIDE    &trans           &trans           &trans           &trans
+  &sk LGUI   &sk LALT     &sk LSHFT        &sk LCTRL    &trans    &kp KP_SUBTRACT  &trans           &trans           &trans           &trans
+  &kp LC(W)  &kp LC(X)    &kp LC(C)        &kp LC(V)    &trans    &kp KP_COMMA     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+                                           &trans       &trans    &trans           &trans
             >;
         };
 
         sym {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &kp LBKT          &kp BSLH    &kp LS(SLASH)  &kp RBKT       &kp LS(SQT)         &kp RA(N0)        &kp N1         &kp ASTERISK  &kp N4          &kp RA(N7)
+  &kp RA(N4)        &kp N5      &kp MINUS      &kp RA(EQUAL)  &kp EQUAL           &kp RA(N8)        &kp LS(EQUAL)  &kp N6        &kp LS(PERIOD)  &kp N3
+  &kp RA(NUMBER_2)  &kp RA(N5)  &kp RA(MINUS)  &kp N8         &kp RA(NUMBER_3)    &kp RA(NUMBER_6)  &kp FSLH       &kp COMMA     &kp DOT         &kp LS(M)
+                                               &trans         &trans              &trans            &trans
             >;
         };
 
         layer_5 {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9   &kp N0
+  &kp F11  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F12  &trans
+                           &trans  &trans    &trans  &trans
             >;
         };
 
