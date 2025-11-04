@@ -173,6 +173,15 @@
             >;
         };
 
+        config {
+            bindings = <
+  &kp C_RESET  &trans      &trans            &trans             &trans        &trans  &trans  &trans  &trans  &kp C_SLEEP
+  &trans       &trans      &kp C_PLAY_PAUSE  &kp C_VOLUME_UP    &trans        &trans  &trans  &trans  &trans  &trans
+  &trans       &kp K_PREV  &kp K_NEXT        &kp C_VOLUME_DOWN  &kp K_MUTE    &trans  &trans  &trans  &trans  &trans
+                                             &trans             &trans        &trans  &trans
+            >;
+        };
+
         // nav {
         //     bindings = <
         //     &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
