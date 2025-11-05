@@ -203,10 +203,10 @@
 
         typo {
             bindings = <
-  &trans      &kp NUMBER_2  &kp N7  &kp RA(E)                  &trans    &trans  &kp SQT        &trans  &trans  &trans
-  &kp LS(N0)  &trans        &ehat   &kp LS(RIGHT_PARENTHESIS)  &trans    &trans  &uhat          &ihat   &ohat   &kp LS(LBKT)
-  &ahat       &trans        &kp N9  &kp LS(SLASH)              &trans    &trans  &kp LS(POUND)  &trans  &trans  &trans
-                                    &trans                     &trans    &trans  &trans
+  &trans  &kp NUMBER_2  &kp N7  &kp RA(E)              &trans    &trans  &kp SQT              &trans  &trans  &trans
+  &kp N0  &trans        &ehat   &kp LS(RIGHT_BRACKET)  &trans    &trans  &uhat                &ihat   &ohat   &kp LS(LBKT)
+  &ahat   &trans        &kp N9  &kp LS(SLASH)          &trans    &trans  &kp LS(NON_US_HASH)  &trans  &trans  &trans
+                                &trans                 &trans    &trans  &trans
             >;
         };
 
